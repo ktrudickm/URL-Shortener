@@ -1,0 +1,134 @@
+.Navbar {
+    background: rgb(255, 255, 255);
+    top: 0;
+    z-index: 10;
+    height: 80px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+.NavContainer {
+    display:flex;
+    justify-content:space-between;
+    height: 80px;
+    z-index: 1;
+    width:100%;
+}
+
+.NavHeader {
+    color: hsl(260, 8%, 14%);
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.MobileIcon {
+    display: none;
+}
+
+.NavOptions {
+    width:100%;
+    display: flex;
+    list-style: none;
+    text-align: left;
+}
+
+.NavItem {
+    height:80px;
+    cursor: pointer;
+}
+
+.NavItem:hover{
+    color: hsl(260, 8%, 14%);
+    text-decoration: none;
+}
+
+.navLink {
+    color: hsl(257, 7%, 63%);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navLink:hover{
+    color: hsl(260, 8%, 14%);
+    text-decoration: none;
+}
+
+.Sign {
+    display: flex;
+    align-items: right;
+    list-style: none;
+    text-align: center;
+    margin-right: 24px;
+}
+
+.NavBtn {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.BtnLink {
+    border-radius: 50px;
+    background: hsl(180, 66%, 49%);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.BtnLink:hover{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(180, 66%, 63%)
+}
+
+@media screen and (max-width: 960px) {
+    .NavBar {
+        transition: 0.8s all ease;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .MobileIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-120%, 25%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(158, 158, 158);
+   }
+
+   .Sign {
+    display: none;
+   }
+
+   .NavBtn {
+    display: none;
+   }
+
+   .NavOptions {
+    display: none;
+    }
+}
+

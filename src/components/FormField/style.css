@@ -1,0 +1,328 @@
+.sectionContainer {
+    height: auto;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 90%) no-repeat center/8px 100%;
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+
+.formContainer {
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    margin-top: -50px;
+    width:75%;
+}
+
+.Form {
+    z-index: 999;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.FormGroup {
+    width:100%;
+}
+
+
+.formWrap {
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../../images/bg-boost-desktop.svg');
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px 30px;
+    width:100%;
+}
+
+
+.Input {
+    width: 100%;
+    margin-right: 20px;
+    height: 150%;
+    text-align: left;
+    border-radius: 8px;
+    padding-left: 20px;
+    min-width:300px;
+}
+
+.Input:focus {
+    border: 0.5px solid hsl(180, 66%, 49%);
+    outline-offset: 0px;
+    outline: none;
+    margin-top: 1.5px;
+}
+
+.btn {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background: hsl(180, 66%, 49%);
+    white-space: nowrap;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: hsl(180, 66%, 63%)
+}
+
+.ErrorMsg {
+    color: hsl(0, 87%, 67%);
+    padding-top: 4px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: -25px;
+}
+
+.SuccessMsg {
+    color: hsl(180, 66%, 49%);
+    padding-top: 4px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: -25px;
+}
+
+.DisplayList {
+    width: 100%;
+}
+
+.resultContainer {
+    height: auto;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    border-radius: 5px;
+    width:100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.resultRow {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    border-radius: 5px;
+    padding: 12px 0;
+    margin: 12px 0;
+}
+
+.origUrl {
+    color: black;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+    min-width: 200px;
+}
+
+.origUrlCol {
+    display: flex;
+    min-width: 190px;
+}
+
+.newUrlCol {
+    display:flex;
+    align-content:flex-end;
+    margin-left: 70px;
+    text-align: right;
+    align-items:center;
+}
+
+.newUrl {
+    color: hsl(180, 66%, 49%);
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+.copyBtn {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 8px;
+    background: hsl(180, 66%, 49%);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.copyBtn:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: hsl(180, 66%, 63%)
+}
+
+.copiedBtn {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 8px;
+    background: hsl(257, 27%, 26%);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px){
+    .Form {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .Input {
+        width: 100%;
+        height:50px;
+        margin-right: 0;
+        min-width:200px;
+    }
+
+    .formWrap {
+        padding: 25px 25px;
+    }
+    .sectionContainer {
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    .FormGroup {
+        margin-bottom: 4px;
+    }
+
+    .formContainer {
+        margin: 2px 2px;
+        margin-top: -50px;
+        width: 100%;
+    }
+
+    .btn {
+        margin: 2px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:14px;
+    }
+
+    .ErrorMsg, .SuccessMsg {
+        padding-bottom:15px;
+        position: relative;
+    }
+
+    .DisplayList {
+        width: 100%;
+        display: flex;
+    }
+
+    .resultContainer {
+        align-items: center;
+        position:relative;
+        display:flex;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .resultRow {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .origUrlCol {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid hsl(0, 0%, 90%);
+        padding-right:12px;
+        max-width: 760px;
+    }
+
+    .origUrl {
+        display: inline-block;
+        text-overflow: ellipsis;
+        margin: 10px 0;
+        padding: 0 8px;
+        height: 20px;
+        margin-right:8px;
+    }
+
+    .newUrlCol {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .newUrl {
+        padding: 10px 4px;
+        width: 100%;
+        padding-left: 8px;
+        border-bottom: 1px solid hsl(0, 0%, 90%);
+        text-align:left;
+    }
+
+    .copyBtn {
+        margin: 10px 0px;
+        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copiedBtn {
+        margin: 10px 0px;
+        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+

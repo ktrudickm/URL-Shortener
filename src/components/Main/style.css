@@ -1,0 +1,146 @@
+
+.MainContainer {
+    color: #fff;
+    display: block;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+.MainWrap {
+    display: grid;
+    z-index: 1;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 30px;
+    justify-content: center;
+}
+
+.MainRow{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+
+.TextContent {
+    margin-bottom: 15px;
+
+}
+
+.ImageSection {
+    margin-bottom: 15px;
+
+}
+
+.TextWrap {
+    max-width: 520px;
+    padding-top: 0;
+    padding-bottom: 60px;
+    align-items: left;
+    text-align:left;
+    padding-right:40px;
+}
+
+.header {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: hsl(260, 8%, 14%);
+}
+
+.MainSubtitle {
+    text-align: left;
+    margin-bottom: 25px;
+    font-size:18px;
+    line-height: 30px;
+    color: hsl(257, 7%, 63%);
+}
+
+.BtnWrapper {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.ImageWrap {
+    max-width: 555px;
+    height: 100%;
+}
+
+.Image {
+    width: 100%;
+    margin: -70px 0 10px 0;
+    padding-right: 0;
+    border-radius: 10px;
+}
+
+.Btn {
+    border-radius: 50px;
+    background: hsl(180, 66%, 49%);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.Btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(180, 66%, 63%)
+}
+
+@media screen and (max-width: 768px) {
+   .MainContainer {
+        padding: 70px 0;
+        height: 100%;
+        margin-top: 0px;
+   }
+
+
+   .MainRow {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .TextContent {
+       flex: 100%;
+       align-items: center;
+   }
+
+   .ImageSection {
+        flex: 100%;
+    }
+
+    .item:nth-of-type(1) {
+        order: 2;
+    }
+    .item:nth-of-type(2) {
+        order: 1;
+    }
+    .header {
+        text-align:center;
+        font-size: 35px;
+    }
+
+    .MainSubtitle {
+        text-align:center;
+    }
+
+    .BtnWrapper {
+        justify-content: center;
+    }
+
+    .TextWrap {
+        margin-right: 0;
+        padding-right:0;
+    }
+
+}

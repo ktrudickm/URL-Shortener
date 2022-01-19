@@ -1,0 +1,116 @@
+
+
+.Icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.FaBars {
+    color: rgb(255, 255, 255);
+}
+
+.SbWrap {
+    color: rgb(255, 255, 255);
+    z-index: 999;
+    background:hsl(257, 27%, 26%);
+    display: grid;
+    align-items: center;
+    margin-top: 85px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 15px;
+
+}
+
+.SbOptions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 55px);
+    text-align: center;
+    border-bottom: 1px solid hsl(252, 2%, 49%);
+    padding: 18px 10px;
+    width: 100%;
+
+}
+
+.SbLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 2px 0;
+    font-weight: bold;
+
+}
+
+.SbLink:hover {
+    list-style: none;
+    text-decoration: none;
+    color: hsl(180, 66%, 49%);
+}
+
+.SignupSbOptions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 55px);
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+
+}
+
+.SbBtnWrap {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 15px 0;
+    padding-top: 25px;
+}
+
+.SbBtn {
+    border-radius: 50px;
+    background: hsl(180, 66%, 49%);
+    white-space: nowrap;
+    padding: 12px 64px;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.SbBtn:hover {
+    list-style: none;
+    text-decoration: none;
+    background-color: hsl(180, 66%, 63%);
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .SbOptions {
+        grid-template-rows: repeat()(3, 20px);
+    }
+
+    .SignupSbOptions {
+        grid-template-rows: repeat()(2, 60px);
+    }
+
+    .SbWrap {
+        height: auto;
+        width:100%
+    }
+
+}
