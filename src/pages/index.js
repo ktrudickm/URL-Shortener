@@ -23,7 +23,6 @@ const Main = () => {
             <Form />
             <Stats />
             <BoostSection />
-            <Footer />
         </>
     )
 }
