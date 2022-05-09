@@ -1,6 +1,6 @@
 {
   "homepage": "http://ktrudickm.github.io/URL-Shortener",
-  "name": "test-bzgbep",
+  "name": "URL-Shortener",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
